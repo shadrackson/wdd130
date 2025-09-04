@@ -1,0 +1,85 @@
+
+/* Styles for index.html
+------------------------
+
+This stylesheet controls the look and feel of index.html  */
+
+/* The nav section is styled with a dark blue background and padding for spacing*/
+
+nav{
+    background-color: darkblue;  /* Gives the navigation bar a dark blue background*/
+    padding: 10px; /* Adds spacing inside the navigation bar */
+}
+
+
+/* 
+  Styles for navigation links
+  ---------------------------
+  - Sets the link text color to white for better contrast
+  - Makes each link behave like a block element (stacked vertically if unstyled)
+  - Adds padding around the links for clickable space and spacing
+*/
+
+nav a {
+  color: white;       /* Makes the link text white */
+  display: block;     /* Makes links behave like block elements */
+  padding: 20px;      /* Adds spacing inside each link for comfort */
+}
+
+
+/* 
+  Styles for headings
+  -------------------
+  - Changes all <h1> elements to dark blue 
+    to match the site’s theme color
+*/
+
+h1 {
+  color: darkblue; /* Makes the main heading text dark blue */
+}
+
+
+/* 
+  Styles for images
+  -----------------
+  - Sets a fixed width of 150px while keeping the height proportional
+  - Adds a thin black border around each image
+  - Adds small padding between the image and its border
+  - Applies a gray box shadow for a subtle 3D effect
+*/
+
+img {
+  width: 150px;             /* Fixes image width */
+  height: auto;             /* Maintains aspect ratio */
+  border: 1px solid black;  /* Thin black border around the image */
+  padding: 2px;             /* Space between image and border */
+  box-shadow: 0 0 30px gray;/* Soft gray shadow effect */
+}
+
+
+/* 
+  Styles for paragraphs
+  ---------------------
+  - Adds padding inside <p> elements 
+    to improve readability and spacing
+*/
+
+p {
+  padding: 10px; /* Creates space inside each paragraph */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
