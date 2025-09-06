@@ -90,8 +90,8 @@ main{
 
 aside{
   width: 320px;
-  margin: 16px;  /* Standard Margin
-  border: 1px solid rgb(0 0 0 / 0.2); /* 1px solid border with 20% opacity*/
+  margin: 16px;  /* Standard Margin */
+  border: 1px solid rgba(0 0 0 / 0.2); /* 1px solid border with 20% opacity*/
   padding: 16px;
   background-color: #eee; /* Light gray*/
   color: #333; /*Dark gray text */
