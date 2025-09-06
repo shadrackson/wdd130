@@ -7,7 +7,7 @@ This stylesheet controls the look and feel of index.html  */
 /* The nav section is styled with a dark blue background and padding for spacing*/
 
 nav{
-    background-color: darkblue;  /* Gives the navigation bar a dark blue background*/
+    background-color: rgb(76, 76, 173);  /* Gives the navigation bar a dark blue background*/
     padding: 10px; /* Adds spacing inside the navigation bar */
 }
 
@@ -26,6 +26,13 @@ nav a {
   padding: 20px;      /* Adds spacing inside each link for comfort */
 }
 
+/* Styles for body*/
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: larger; /* Improves readability*/
+}
 
 /* 
   Styles for headings
@@ -48,7 +55,7 @@ h1 {
   - Applies a gray box shadow for a subtle 3D effect
 */
 
-img {
+ main img {
   width: 150px;             /* Fixes image width */
   height: auto;             /* Maintains aspect ratio */
   border: 1px solid black;  /* Thin black border around the image */
@@ -65,17 +72,46 @@ img {
 */
 
 p {
-  padding: 10px; /* Creates space inside each paragraph */
+  padding: 0px; /* Creates space inside each paragraph */
 }
 
 
+/* Styles for main element*/
+
+main{
+  max-width: 800px; /* Restricts <main> element width to 840px maximum. the 
+  content inside <main> will not stretch wider than 840px 
+  even on large screens. On smaller screens, it will shrink 
+  naturally to fit the viewport.  */
+}
 
 
+/* Styles for aside element*/
+
+aside{
+  width: 320px;
+  margin: 16px;  /* Standard Margin
+  border: 1px solid rgb(0 0 0 / 0.2); /* 1px solid border with 20% opacity*/
+  padding: 16px;
+  background-color: #eee; /* Light gray*/
+  color: #333; /*Dark gray text */
+  text-align: center; /* Centers text horizontally */
+
+}
+
+aside img{
+  width: 200px; /* Sets image width*/
+  height: auto;  /*Keeps original aspect ratio. Forcing a fixed width and height can cause distortion or pixelation*/
+}
 
 
+/* Styles for footer*/
 
-
-
+footer{
+  margin-top: 15px;  /* adds 15px space above the footer*/
+  border-top: 1px solid #000;  /* Shorthand for border width, style, and color */
+  text-align: center;  /* Centers the text inside the footer */
+}
 
 
 
