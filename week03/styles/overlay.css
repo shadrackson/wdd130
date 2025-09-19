@@ -1,0 +1,67 @@
+
+
+
+/* Reset default margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the main content area */
+main {
+  max-width: 800px; /* Limits width for better readability */
+  margin: 2rem auto; /* Centers the content with vertical spacing */
+  font-family: Arial, Helvetica, sans-serif; /* Sets a clean, readable font */
+}
+
+/* Style the main heading */
+h1 {
+  text-align: center; /* Centers the heading text */
+  font-size: 1.5rem; /* Sets a moderate font size */
+  text-shadow: 3px 3px 5px #777; /* Adds a soft shadow for depth */
+}
+
+/* Container for hero image and overlay stats */
+.herodiv {
+  margin: 10px auto; /* Adds spacing and centers the div */
+  position: relative; /* Needed to position child elements absolutely */
+  /* If removed, .stats will not position relative to .herodiv */
+}
+
+/* Style the hero image */
+.herodiv img {
+  width: 100%; /* Makes image span full width of container */
+  height: 300px; /* Sets fixed height */
+  object-fit: cover; /* Ensures image fills space without distortion */
+}
+
+/* Style the stats overlay box */
+.stats {
+  position: absolute; /* Positions relative to .herodiv */
+  top: 25px; /* Distance from top of .herodiv */
+  right: 25px; /* Distance from right of .herodiv */
+  background: radial-gradient(#eee, #323A06); /* Adds gradient background */
+  border: 1px solid #000; /* Adds border for definition */
+  padding: 0.65rem; /* Adds inner spacing */
+  box-shadow: 0 0 30px #111; /* Creates a glowing shadow effect */
+  opacity: 0.9; /* Slight transparency for layered look */
+}
+
+/* Style for subheadings */
+h2 {
+  text-shadow: 0 0 15px #333; /* Adds glow effect to text */
+  border-bottom: 1px solid #555; /* Underlines the heading */
+  margin-bottom: 0.3rem; /* Adds spacing below the heading */
+}
+
+/* Style the footer */
+footer {
+  position: fixed; /* Keeps footer visible at bottom of screen */
+  bottom: 0; /* Anchors it to the bottom */
+  margin: 1rem; /* Adds spacing around footer */
+  border-top: 1px solid #000; /* Adds top border for separation */
+  padding: 0.5rem; /* Adds inner spacing */
+  color: navy; /* Sets text color */
+  font-weight: 700; /* Makes text bold */
+  font-style: italic; /* Adds italic styling */
+}
