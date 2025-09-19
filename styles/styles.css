@@ -1,0 +1,199 @@
+
+
+
+/* Styles for index.html
+------------------------
+This stylesheet controls the look and feel of index.html  
+It uses CSS variables for consistency and Flexbox for responsive layout.
+*/
+
+/* 
+  UNIVERSAL SELECTOR RESET
+  -------------------------
+  This block targets all elements on the page using the universal selector (*).
+  It's commonly used to remove default browser styles and ensure consistent layout behavior.
+  Ideal for starting with a clean slate when building responsive designs.
+*/
+
+* {
+  /* Remove default margin from all elements */
+  margin: 0;
+
+  /* Remove default padding from all elements */
+  padding: 0;
+
+  /* Include padding and border in element's total width and height */
+  box-sizing: border-box;
+}
+
+
+
+/* 
+  Root variables
+  --------------
+  Centralized values for colors, fonts, spacing, and effects.
+*/
+:root {
+  --primary-color: rgb(76, 76, 173);       /* Navigation and footer background */
+  --secondary-color: rgb(21, 176, 187);    /* Accent color for headings */
+  --text-color: #333;                      /* Standard text color */
+  --light-gray: #eee;                      /* Background for aside */
+  --border-color: rgba(0, 0, 0, 0.2);      /* Border color for aside */
+  --font-family: Arial, Helvetica, sans-serif;
+  --font-size-large: larger;
+  --line-height: 1.6;
+  --shadow: 0 0 30px gray;                 /* Image shadow */
+}
+
+/* 
+  Global box-sizing
+  -----------------
+  Ensures padding and borders don't break layout widths.
+*/
+* {
+  box-sizing: border-box;
+}
+
+/* 
+  Navigation bar
+  --------------
+  Horizontal layout with spacing and hover effects.
+*/
+nav {
+  background-color: var(--primary-color);
+  padding: 10px;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+  outline: none;
+}
+
+/* 
+  Body styles
+  -----------
+  Applies font, size, and color site-wide.
+*/
+body {
+  font-family: var(--font-family);
+  font-weight: 100;
+  font-size: var(--font-size-large);
+  line-height: var(--line-height);
+  color: var(--text-color);
+  background-color: #fdfdfd;
+  margin: 0;
+}
+
+/* 
+  Headings
+  --------
+  Styled with accent color for emphasis.
+*/
+h1 {
+  color: var(--secondary-color);
+}
+
+/* 
+  Images
+  ------
+  Responsive with border and shadow.
+*/
+main img,
+aside img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid black;
+  padding: 2px;
+  box-shadow: var(--shadow);
+}
+
+/* 
+  Paragraphs
+  ----------
+  Spacing and readability.
+*/
+p {
+  margin: 10px 0;
+  line-height: var(--line-height);
+}
+
+/* 
+  Flexbox container
+  -----------------
+  Wraps main and aside for responsive layout.
+*/
+.container {
+  display: flex;           /* Enables Flexbox */
+  flex-direction: column;        /* Always stack vertically */
+  justify-content: center; /* Centers content horizontally */
+  gap: 20px;               /* Space between main and aside */
+  padding: 20px;
+}
+
+/* 
+  Main content area
+  -----------------
+  Flexible width with max constraint.
+*/
+main {
+          
+  max-width: 800px;
+}
+
+/* 
+  Aside section
+  -------------
+  Sidebar with background and border.
+*/
+aside {
+          
+  border: 1px solid var(--border-color);
+  padding: 16px;
+  background-color: var(--light-gray);
+  color: var(--text-color);
+  text-align: center;
+}
+
+/* 
+  Responsive design
+  -----------------
+  Adjusts layout for screens under 600px.
+*/
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column; /* Stack main and aside vertically */
+    padding: 10px;
+  }
+
+  main,
+  aside {
+    width: 100%;            /* Full width on mobile */
+    max-width: 800px;
+  }
+}
+
+/* 
+  Footer
+  ------
+  Styled with background, spacing, and centered text.
+*/
+footer {
+  margin-top: 15px;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  text-align: center;
+  font-size: 0.9rem;
+  color: white;
+  background-color: var(--primary-color);
+}
