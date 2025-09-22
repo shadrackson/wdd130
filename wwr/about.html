@@ -1,0 +1,88 @@
+
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Exciting whitewater rafting adventures and company info.">
+    <meta name="author" content="Shadrack Wamalwa Onyango">
+    <title>About Us |  Whitewater Rafting Adventures</title>
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="Rafting Company Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <button id="theme-toogle">Toggle Theme </button>
+    </header>
+    
+    <main>
+        <div class="hero">
+            <img src="images/hero.jpg" alt="Rafting trip on a rushing river">
+            <h1>Whitewater Rafting Adventures</h1>
+            <article>
+                <img src="images/happy-client.jpg" alt="A satisfied whitewater rafter smiling">
+                <p>
+                    At whitewater Rafting Adventures, we create unforgettable rafting experiences.
+                    Our certified guides, state of the art safety equipments and passion for adventure 
+                    ensure every trip balances excitement with safety. Our mission is to bring thrilling
+                    experiences to adventures of all levels.
+                </p>
+            </article> 
+        </div>
+
+        <section>
+            <h2>History</h2>
+            <p>
+                Founded in the heart of the canyon, Whitewater rafting adventures started as a small group of 
+                fearless yet curious adventure seekers exploring rivers during the weekends and holidays.
+                Over the years, we've grown into a reliable and a trusted name in outdoor adventures, offering
+                guided trips, top-notch services and unforgettable memories to millions of guests from around the world.
+            </p>
+        </section>
+
+        <section>
+            <h2>Adventure Awaits You!</h2>
+            <p>Stay tuned for exciting details about our guided trips, offers and packages.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>©2025 Whitewater Rafting Adventures | Shadrack Onyango </p>
+        <nav class="socialmedia">
+            <a href="#"><img src="images/facebook.png" alt=" Facebook Page"></a>
+            <a href="#"><img src="images/twitter.png" alt="Twitter  Page"></a>
+            <a href="#"><img src="images/instagram.png" alt="Instagram Page"></a>
+            <a href="#"><img src="images/youtube.png" alt="Youtube Page"></a>
+        </nav>
+
+        <p id="last-updated"></p>
+<script>
+  const modified = new Date(document.lastModified);
+  const options = {
+    weekday: 'long',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit'
+  };
+  const formattedDate = modified.toLocaleString('en-US', options);
+  document.getElementById("last-updated").textContent = "Last updated: " + formattedDate;
+</script>
+
+        
+    </footer>
+</body>
+</html>
