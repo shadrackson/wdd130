@@ -53,7 +53,7 @@ a:hover { color: var(--accent-orange); }
   color: var(--white); font-weight: 500; padding: .5rem 1rem;
   border-radius: var(--radius); transition: var(--transition);
 }
-.nav-link:hover,.nav-link.active { background-color: grey; }
+.nav-link:hover,.nav-link.active { background-color: #333; }
 
 /* ---------- HERO ---------- */
 .hero-section {
@@ -64,7 +64,7 @@ a:hover { color: var(--accent-orange); }
   display: grid; grid-template-columns: repeat(auto-fit,minmax(300px,1fr)); gap: 3rem; align-items: center;
 }
 .hero-title { font-size: 2.5rem; color: var(--primary-blue); margin-bottom: 1rem; }
-.hero-quote { font-style: italic; color: var(--text-light); margin-bottom: 2rem; }
+.hero-quote { font-style: italic; color: var(--text-dark); margin-bottom: 2rem; }
 
 /* ---------- BUTTONS ---------- */
 .btn {
@@ -75,7 +75,7 @@ a:hover { color: var(--accent-orange); }
 .btn.primary { background: var(--accent-orange); color: var(--white); }
 .btn.primary:hover { background: var(--accent-red); }
 .btn.secondary { border-color: var(--primary-blue); color: var(--primary-blue); }
-.btn.secondary:hover { background: var(--primary-blue); color: var(--white); }
+.btn.secondary:hover { background: #003366; color: var(--white); }
 
 /* ---------- CARDS & GRIDS ---------- */
 .grid { display: grid; gap: 2rem; grid-template-columns: repeat(auto-fit,minmax(300px,1fr)); margin: 2rem 0; }
@@ -106,7 +106,7 @@ button[type=submit]:hover { background: var(--accent-red); transform: translateY
 
 /* ---------- FOOTER ---------- */
 .footer {
-  background: rgba(128,128,128,0.8); color: var(--blue);
+  background: #333; color: var(--white);
   padding: 2rem 0; text-align: center;
 }
 .footer-content { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
@@ -129,5 +129,6 @@ button[type=submit]:hover { background: var(--accent-red); transform: translateY
 .text-center{text-align:center;}
 .hidden{display:none;}
 .visible{display:block;}
+
 
 
