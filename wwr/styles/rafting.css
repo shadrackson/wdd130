@@ -53,7 +53,7 @@ a:hover { color: var(--accent-orange); }
   color: var(--white); font-weight: 500; padding: .5rem 1rem;
   border-radius: var(--radius); transition: var(--transition);
 }
-.nav-link:hover,.nav-link.active { background: var(--accent-blue); }
+.nav-link:hover,.nav-link.active { background-color: grey; }
 
 /* ---------- HERO ---------- */
 .hero-section {
@@ -106,7 +106,7 @@ button[type=submit]:hover { background: var(--accent-red); transform: translateY
 
 /* ---------- FOOTER ---------- */
 .footer {
-  background: rgba(128,128,128,0.8); color: var(--navyblue);
+  background: rgba(128,128,128,0.8); color: var(--blue);
   padding: 2rem 0; text-align: center;
 }
 .footer-content { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
@@ -129,4 +129,5 @@ button[type=submit]:hover { background: var(--accent-red); transform: translateY
 .text-center{text-align:center;}
 .hidden{display:none;}
 .visible{display:block;}
+
 
